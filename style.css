@@ -1,0 +1,122 @@
+* {
+ margin:0;
+ padding:0;
+ box-sizing:border-box;
+}
+html, body {
+ height:100%;
+ width:100%;
+ font-family: sans-serif;
+}
+main{
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(to right bottom, black, rgb(42, 39, 39));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+section{
+    height: 100%;
+    width: 420px;
+    margin: auto;
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    
+}
+.all-reels{
+    height: 100%;
+    width: 100%;
+    overflow: auto;
+    scroll-snap-type: y mandatory;
+    scroll-behavior: smooth;
+
+}
+.all-reels::-webkit-scrollbar{
+    display: none;
+}
+.reel{
+    height: 100%;
+    width: 100%;
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: 20px;
+    scroll-snap-align: start;
+    scroll-snap-stop: always;
+    transition: all 0.4s ease-in-out;
+}
+.reel video{
+
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.reel .bottom{
+    position: absolute;
+    width: 100%;
+    bottom: 10px;
+    padding: 15px;
+    color: white;
+    
+}
+
+.user{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.user button{
+    padding: 2px 5px;
+    border: 2px solid white;
+    background:transparent;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+.bottom .user img{
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.bottom>h3{
+    font-weight: 500;
+    font-size: 18px;
+    margin-top: 15px;
+}
+.right{
+    position: absolute;
+    right: 20px;
+    bottom: 100px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+    color: white;
+}
+.right i{
+    color: white;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+
+/* #like{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: 70px;
+    opacity: 0;
+    background: Linear-gradient(to right bottom, rgba(167, 162, 150, 0.961), rgb(255, 0, 149));
+    background-size: cover;
+    background-clip: text;
+    color: transparent;
+    transform: translate(-50%, -50%) scale(0) rotate(-60deg);
+    transition: all cubic-bezier(.65,1,.77,1.44) 0.4s;
+} */

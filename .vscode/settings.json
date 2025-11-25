@@ -1,0 +1,6 @@
+{
+    "editor.suggest.showStatusBar": true,
+    "telemetry.editStats.showStatusBar": false,
+    "git.branchProtectionPrompt": "alwaysPrompt",
+    "git.branchRandomName.enable": true
+}
